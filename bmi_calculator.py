@@ -6,18 +6,18 @@ print(" ")
 
 #daniel ur so stupid
 
-weight = input("What is your weight in pounds?  ")
-height = input("What is your height in inches?  ")
+weight = int(input("What is your weight in pounds?  "))
+height = int(input("What is your height in inches?  "))
 bmi = (weight * 703) / (height * height)
 print ("Your BMI is " + str(bmi))
 
 if bmi < 18.5:
 	type = "underweight"
-if 18.5 <= bmi < 25:
+elif bmi < 25:
 	type = "normal"
-if 25 <= bmi < 30:
+elif bmi < 30:
 	type = "overweight"
-if bmi < 30:
+else:
 	type = "obese"
 	
 print("You are " + type)
