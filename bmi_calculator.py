@@ -23,7 +23,7 @@ if bmi1 < 30:
 	
 print("You are " + type)
 
-if type == obese or overweight
+if type == obese or type == overweight
 	print("Try losing some weight")
 if type == underweight
 	print("Try gaining some weight")
