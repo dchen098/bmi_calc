@@ -1,30 +1,5 @@
-print(" ")
-print("\t\t\tBMI Calculator")
-print("\t\t\tMade by Daniel Chen")
-print(" ")
-print(" ")
-
-#daniel ur so stupid
-
-weight = int(input("What is your weight in pounds?  "))
-height = int(input("What is your height in inches?  "))
-bmi = (weight * 703) / (height * height)
-print ("Your BMI is " + str(bmi))
-
-if bmi < 18.5:
-	type = "underweight"
-elif bmi < 25:
-	type = "normal"
-elif bmi < 30:
-	type = "overweight"
-else:
-	type = "obese"
-	
-print("You are " + type)
-
-if type == "obese" or type == "overweight":
-	print("Try losing some weight")
-if type == "underweight":
-	print("Try gaining some weight")
-if type == "normal":
-	print("You are good")
+print("\n\t\t\tBMI Calculator\n\t\t\tMade by Daniel Chen\n\n")
+bmi=(int(input("What is your weight in pounds?  "))*703)/(int(input("What is your height in inches?  "))**2)
+t="underweight"if bmi<18.5 else"normal"if bmi<25 else"overweight" if bmi<30 else"obese"
+print("Your BMI is "+str(bmi)+"\nYou are "+t)
+print("Try losing some weight"if t=="obese"or t=="overweight"else"You are good"if t=="normal"else"Try gaining some weight")
